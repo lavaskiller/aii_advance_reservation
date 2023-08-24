@@ -47,6 +47,15 @@
     </style>
 </head>
 <body>
+    <script>
+    var isMobile = /Mobi/i.test(window.navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = "index_mobile.html"; // 모바일 기기인 경우 index_mobile.html로 리다이렉션
+    }
+    </script>
+
+    <!-- 모바일이 아닌 경우에만 아래 내용이 표시. -->
     <img src="https://drive.google.com/uc?export=view&id=1MVKpCtEkvk4oUk9Se7LDBSIDTkCp31PQ" ></img>
     <iframe src="https://script.google.com/macros/s/AKfycbzia1PKobawb90NpiFuRCh_P5p9K68eA6poW3OOC1TYn7IoIAQoaai-LmoQQH4JqyrW/exec"></iframe>
 </body>
