@@ -52,13 +52,13 @@ g<!DOCTYPE html>
     var userLang = navigator.language || navigator.userLanguage;
 
     if (isMobile) {
-      if (userLang == "ko") {
+      if (userLang == "ko-KR") {
       window.location.href = "index_mobile.html"; // 모바일 기기가 아닌 경우 index_mobile.html로 리다이렉션
       }else{
       window.location.href = "index_mobile_eng.html"; // 모바일 기기가 아닌 경우 index_mobile_eng.html로 리다이렉션
       }
     }else{
-      if (userLang != "ko") {
+      if (userLang != "ko-KR") {
       alert(userLang)
       window.location.href = "index_eng.html"; // 모바일 기기가 아닌 경우 index_eng.html로 리다이렉션
       }
