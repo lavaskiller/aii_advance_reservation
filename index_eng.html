@@ -15,6 +15,18 @@
 
   gtag('config', 'G-Y7L2470N29');
 </script>
+  <script>
+    var isMobile = /Mobi/i.test(window.navigator.userAgent);
+    var userLang = navigator.language || navigator.userLanguage;
+    var redirectPage = isMobile ? "index_mob" : "index";
+          
+    if (userLang != "ko-KR") {
+      redirectPage += "_eng";
+    }
+
+    window.location.href = redirectPage + ".html";
+    
+  </script>
     <style>
         /* CSS 스타일을 인라인으로 추가 */
         html, body {
