@@ -47,24 +47,6 @@
     </style>
 </head>
 <body>
-    <script>
-    var isMobile = /Mobi/i.test(window.navigator.userAgent);
-    var userLang = navigator.language || navigator.userLanguage;
-
-    if (isMobile) {
-      if (userLang != "ko") {
-      window.location.href = "index_mobile_eng.html"; // 모바일 기기가 아닌 경우 index.html로 리다이렉션
-      }else{
-      window.location.href = "index_mobile.html"; // 모바일 기기가 아닌 경우 index.html로 리다이렉션
-      }
-    }else{
-      if (userLang != "ko") {
-      window.location.href = "index_eng.html"; // 모바일 기기가 아닌 경우 index.html로 리다이렉션
-      }
-    }
-    </script>
-
-    <!-- 모바일인 경우에만 아래 내용이 표시. -->
     <img src="https://drive.google.com/uc?export=view&id=1wVgKSZb9b3qbFgGZYHPh-nn9nsESeaB9" ></img>
     <img src="https://drive.google.com/uc?export=view&id=19ra5zuYQMH8CDO6MHp6SBFSnVUCy4nJm" ></img>
     <iframe src="https://script.google.com/macros/s/AKfycbzia1PKobawb90NpiFuRCh_P5p9K68eA6poW3OOC1TYn7IoIAQoaai-LmoQQH4JqyrW/exec"></iframe>
