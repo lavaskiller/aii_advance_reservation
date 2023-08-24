@@ -24,7 +24,9 @@
       redirectPage += "_eng";
     }
 
-    window.location.href = redirectPage + ".html";
+    if(redirectPage != 'index_eng') {
+      window.location.href = redirectPage + ".html";
+    }
     
   </script>
     <style>
