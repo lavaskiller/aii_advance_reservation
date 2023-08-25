@@ -63,6 +63,29 @@ preLoadImg(preLoadImgSrc);
           margin-left: auto;
           margin-right: auto;
         }
+
+          .footer-column {
+          float: left;
+          width: 25%;
+        }
+        
+        /* Clear floats after the columns */
+        .footer-row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* 배너를 고정시킴 */
+        .footer-row {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: red;
+          color: white;
+          text-align: center;
+        }
     </style>
   
 </head>
