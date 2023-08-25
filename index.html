@@ -63,6 +63,9 @@
         .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
         .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
         .w3-xxlarge{font-size:36px!important}
+
+      .fade-in {opacity: 0; transition: opacity 0.5s;}
+      .fade-in.show {opacity: 1;}
     </style>
 </head>
 <body>
@@ -83,6 +86,19 @@
   
   <div style="margin: 50px"></div>
   <a name="5"><iframe src="https://script.google.com/macros/s/AKfycbzia1PKobawb90NpiFuRCh_P5p9K68eA6poW3OOC1TYn7IoIAQoaai-LmoQQH4JqyrW/exec"></iframe></a>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var images = document.querySelectorAll('.fade-in');
+      images.forEach(function(image) {
+        var imageTop = image.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+        if (imageTop < windowHeight - 100) {
+          image.classList.add('show');
+        }
+      });
+    });
+  </script>
   
 </body>
 </html>
