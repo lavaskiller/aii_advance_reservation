@@ -17,6 +17,11 @@
   </script>
 
 <script>
+function scrollto(id) {
+  const element = document.getElementById(id);
+  element.scrollIntoView();
+}
+  
 const preLoadImgSrc = [
     "img/mob1.jpg",
     "img/mob2.jpg",
@@ -36,6 +41,7 @@ const preLoadImg = (images) => {
 };
 
 preLoadImg(preLoadImgSrc);
+
 </script>
   
     <style>
@@ -92,16 +98,16 @@ preLoadImg(preLoadImgSrc);
 </head>
 <body>
   
-    <img src="img/mob1.jpg" ></img>
+    <img id="1" src="img/mob1.jpg" ></img>
     <img src="img/mob2.jpg" ></img>
-    <img src="img/mob3.jpg" ></img>
+    <img id="2" src="img/mob3.jpg" ></img>
     <img src="img/mob4.jpg" ></img>
-    <img src="img/mob5.jpg" ></img>
+    <img id="3" src="img/mob5.jpg" ></img>
     <img src="img/mob6.jpg" ></img>
-    <img src="img/mob7.jpg" ></img>
+    <img id="4" src="img/mob7.jpg" ></img>
     <img src="img/mob8.jpg" ></img>
   
-    <iframe src="https://script.google.com/macros/s/AKfycbz_uwtBFwBlIBFZNn90-LWhHkja_tM8ncpn6j6qJDuG1Tc68IJwITYdzBEcoqHdX7EN/exec"  frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="-ms-zoom: 2;
+    <iframe id=5 src="https://script.google.com/macros/s/AKfycbz_uwtBFwBlIBFZNn90-LWhHkja_tM8ncpn6j6qJDuG1Tc68IJwITYdzBEcoqHdX7EN/exec"  frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="-ms-zoom: 2;
         -moz-transform: scale(2);
         -moz-transform-origin: 45% 0;
         -o-transform: scale(2);
@@ -111,11 +117,11 @@ preLoadImg(preLoadImgSrc);
         width:45%; height:60%;"></iframe>
   <!--  bar  -->
   <div class="footer-row">
-  <div class="footer-icon"><img src="img/1.png" ></img></div>
-  <div class="footer-icon"><img src="img/2.png" ></img></div>
-  <div class="footer-icon"><img src="img/3.png" ></img></div>
-  <div class="footer-icon"><img src="img/4.png" ></img></div>
-  <div class="footer-icon"><img src="img/5.png" ></img></div>
+  <div class="footer-icon"><img src="img/1.png" onclick="scrollto("1")"></img></div>
+  <div class="footer-icon"><img src="img/2.png" onclick="scrollto("2")"></img></div>
+  <div class="footer-icon"><img src="img/3.png" onclick="scrollto("3")"></img></div>
+  <div class="footer-icon"><img src="img/4.png" onclick="scrollto("4")"></img></div>
+  <div class="footer-icon"><img src="img/5.png" onclick="scrollto("5")"></img></div>
   </div>
 </body>
 </html>
