@@ -1,62 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
+
 <head>
-  <link rel="favicon" href="https://drive.google.com/uc?export=view&id=151JhY_KliEIJV3rUU3dX_NTHRRHTkZth">
-  <link rel="apple-touch-icon" href="https://drive.google.com/uc?export=view&id=151JhY_KliEIJV3rUU3dX_NTHRRHTkZth">
-  <link rel="icon" type="image/png"  href="https://drive.google.com/uc?export=view&id=151JhY_KliEIJV3rUU3dX_NTHRRHTkZth">
-  <title>Aii 사전예약</title>
+    <link rel="favicon" href="https://drive.google.com/uc?export=view&id=151JhY_KliEIJV3rUU3dX_NTHRRHTkZth">
+    <link rel="apple-touch-icon" href="https://drive.google.com/uc?export=view&id=151JhY_KliEIJV3rUU3dX_NTHRRHTkZth">
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=151JhY_KliEIJV3rUU3dX_NTHRRHTkZth">
+    <title>Aii 사전예약</title>
 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7L2470N29"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7L2470N29"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-Y7L2470N29');
-</script>
-  <script>
-    var isMobile = /Mobi/i.test(window.navigator.userAgent);
-    var userLang = navigator.language || navigator.userLanguage;
-    var redirectPage = isMobile ? "index_mob" : "index";
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    if (userLang != "ko-KR") {
-      redirectPage += "_eng";
-    }
+        gtag('config', 'G-Y7L2470N29');
+    </script>
+    <script>
+        var isMobile = /Mobi/i.test(window.navigator.userAgent);
+        var userLang = navigator.language || navigator.userLanguage;
+        var redirectPage = isMobile ? "index_mob" : "index";
 
-    if(redirectPage != 'index') {
-      window.location.href = redirectPage + ".html";
-    }
+        if (userLang != "ko-KR") {
+            redirectPage += "_eng";
+        }
 
-  </script>
-  <script>
-  
-const preLoadImgSrc = [
-    "img/main_page.jpg",
-    "img/web_1.jpg",
-    "img/web_2.jpg",
-    "img/web_3.jpg",
-    "img/web_4.jpg",
-    "img/0.jpg",
-    "img/1.jpg",
-    "img/2.jpg",
-    "img/3.jpg",
-    "img/4.jpg"
-];
+        if (redirectPage != 'index') {
+            window.location.href = redirectPage + ".html";
+        }
+    </script>
+    <script>
+        const preLoadImgSrc = [
+            "img/main_page.jpg",
+            "img/web_1.jpg",
+            "img/web_2.jpg",
+            "img/web_3.jpg",
+            "img/web_4.jpg",
+            "img/0.jpg",
+            "img/1.jpg",
+            "img/2.jpg",
+            "img/3.jpg",
+            "img/4.jpg"
+        ];
 
-const preLoadImg = (images) => {
-    images.forEach((image) => {
-        const img = new Image();
-        img.src = image;
-    });
-};
+        const preLoadImg = (images) => {
+            images.forEach((image) => {
+                const img = new Image();
+                img.src = image;
+            });
+        };
 
-preLoadImg(preLoadImgSrc);
-
-</script>
-    <style>
+        preLoadImg(preLoadImgSrc);
+    </script>
+     <style>
         /* CSS 스타일을 인라인으로 추가 */
         html, body {
             font-family: Arial, sans-serif;
@@ -89,29 +90,43 @@ preLoadImg(preLoadImgSrc);
         .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
         .w3-xxlarge{font-size:36px!important}
 
+        .container{overflow-y: scroll; scroll-snap-type: y mandatory;}
+        .imgs{width: 100%;height: 100%;scroll-snap-align: start;}
     </style>
 </head>
-<body>
-    <!-- 모바일이 아니고, 지원 언어가 korea인 경우에만 아래 내용이 표시. -->
-   <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px">
 
-    <a href="#1" class="w3-bar-item w3-button" style="margin-top: 35px;"><img src="img/1.png"></a>
-    <a href="#2" class="w3-bar-item w3-button"><img src="img/2.png"></a>
-    <a href="#3" class="w3-bar-item w3-button"><img src="img/3.png"></a>
-    <a href="#4" class="w3-bar-item w3-button"><img src="img/4.png"></a>
-    <a href="#5" class="w3-bar-item w3-button"><img src="img/5.png" ></a>
-     <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); height: 60px; width: 60px;">
-        <img src="img/0.png" style="height: 38px; width: 60px;">
+<body style="height: 100%; margin: 0; padding: 0; font-family: Arial, sans-serif;">
+    <!-- 모바일이 아니고, 지원 언어가 korea인 경우에만 아래 내용이 표시. -->
+    <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px">
+
+        <a href="#1" class="w3-bar-item w3-button" style="margin-top: 35px;"><img src="img/1.png"></a>
+        <a href="#1" class="w3-bar-item w3-button"><img src="img/1.png"></a>
+        <a href="#2" class="w3-bar-item w3-button"><img src="img/2.png"></a>
+        <a href="#3" class="w3-bar-item w3-button"><img src="img/3.png"></a>
+        <a href="#4" class="w3-bar-item w3-button"><img src="img/4.png"></a>
+        <a href="#5" class="w3-bar-item w3-button"><img src="img/5.png"></a>
+        <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); height: 60px; width: 60px;">
+            <img src="img/0.png" style="height: 38px; width: 60px;">
+        </div>
+
     </div>
-    
-   </div>
-  <a name="1"><img src="img/web_1.jpg"></a>
-  <a name="2"><img src="img/web_2.jpg"></a>
-  <a name="3"><img src="img/web_3.jpg"></a>
-  <a name="4"><img src="img/web_4.jpg"></a>
-  
-  <div style="margin: 50px"></div>
-  <a name="5"><iframe src="https://script.google.com/macros/s/AKfycbzia1PKobawb90NpiFuRCh_P5p9K68eA6poW3OOC1TYn7IoIAQoaai-LmoQQH4JqyrW/exec"></iframe></a>
-  
+    <div class="container" style="height: 100%; overflow-y: scroll; scroll-snap-type: y mandatory;">
+        <div class="imgs" style="width: 100%; height: 100%; scroll-snap-align: start;"><a name="1"><img
+                    src="img/web_1.jpg"></a></div>
+        <div class="imgs" style="width: 100%; height: 100%; scroll-snap-align: start;"><a name="2"><img
+                    src="img/web_2.jpg"></a></div>
+        <div class="imgs" style="width: 100%; height: 100%; scroll-snap-align: start;"><a name="3"><img
+                    src="img/web_3.jpg"></a></div>
+        <div class="imgs" style="width: 100%; height: 100%; scroll-snap-align: start;"><a name="4"><img
+                    src="img/web_4.jpg"></a></div>
+    </div>
+    <div style="margin: 50px"></div>
+    <a name="5">
+        <iframe src="https://script.google.com/macros/s/AKfycbzia1PKobawb90NpiFuRCh_P5p9K68eA6poW3OOC1TYn7IoIAQoaai-LmoQQH4JqyrW/exec"
+            style="width: 100%; height: 100%; display: block; margin-left: auto; margin-right: auto; vertical-align: middle;">
+        </iframe>
+    </a>
+
 </body>
+
 </html>
