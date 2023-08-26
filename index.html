@@ -84,17 +84,18 @@ preLoadImg(preLoadImgSrc);
           vertical-align: middle;
         }
 
-        .w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+        .w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto scroll-snap-type: y mandatory;}
         .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
         .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
         .w3-xxlarge{font-size:36px!important}
+        .w3-bar-item w3-button{scroll-snap-align: center;}
     </style>
 </head>
 <body>
     <!-- 모바일이 아니고, 지원 언어가 korea인 경우에만 아래 내용이 표시. -->
    <div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:70px">
 
-     <img src="img/0.png">
+    <img src="img/0.png">
     <a href="#1" class="w3-bar-item w3-button"><img src="img/1.png"></a>
     <a href="#2" class="w3-bar-item w3-button"><img src="img/2.png"></a>
     <a href="#3" class="w3-bar-item w3-button"><img src="img/3.png"></a>
