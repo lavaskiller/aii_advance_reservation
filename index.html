@@ -84,11 +84,14 @@ preLoadImg(preLoadImgSrc);
           vertical-align: middle;
         }
 
-        .w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto; overflow-y: scroll; scroll-snap-type: y mandatory;}
+        .w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;}
         .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
         .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
         .w3-xxlarge{font-size:36px!important}
         .w3-button{scroll-snap-align: center;}
+
+        .container{overflow-y: scroll, scroll-snap-type: y mandatory;}
+        .imgs{scroll-snap-align: start;}
     </style>
 </head>
 <body>
@@ -105,12 +108,12 @@ preLoadImg(preLoadImgSrc);
     </div>
     
    </div>
-  
-  <a name="1"><img src="img/web_1.jpg"></a>
-  <a name="2"><img src="img/web_2.jpg"></a>
-  <a name="3"><img src="img/web_3.jpg"></a>
-  <a name="4"><img src="img/web_4.jpg"></a>
-  
+  <div class="container">
+  <div class="imgs"><a name="1"><img src="img/web_1.jpg"></a></div>
+  <div class="imgs"><a name="2"><img src="img/web_2.jpg"></a></div>
+  <div class="imgs"><a name="3"><img src="img/web_3.jpg"></a></div>
+  <div class="imgs"><a name="4"><img src="img/web_4.jpg"></a></div>
+  </div>
   <div style="margin: 50px"></div>
   <a name="5"><iframe src="https://script.google.com/macros/s/AKfycbzia1PKobawb90NpiFuRCh_P5p9K68eA6poW3OOC1TYn7IoIAQoaai-LmoQQH4JqyrW/exec"></iframe></a>
   
